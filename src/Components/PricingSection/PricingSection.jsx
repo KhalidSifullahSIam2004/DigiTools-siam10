@@ -9,7 +9,7 @@ const PricingSection = () => {
       <div className=' grid justify-center gap-4 md:grid-cols-2 lg:flex lg:justify-between'>
 
 {/* 1st */}
-        <div className="card bg-base-100 shadow-sm text-left p-6 my-6">
+        <div className="card bg-base-400 shadow-2xl text-left p-6 my-6">
   <div className="card-body">
 
     
@@ -46,7 +46,7 @@ const PricingSection = () => {
 
 
 {/* 2nd */}
-        <div className="card bg-linear-to-r from-[#a139f6] to-[#7504fe] shadow-sm text-left p-6 my-6 text-white">
+        <div className="card bg-linear-to-r from-[#a139f6] to-[#7504fe] shadow-2xl text-left p-6 my-6 text-white">
   <div className="card-body">
 
     
@@ -91,7 +91,7 @@ const PricingSection = () => {
 
 
 {/* 3rd */}
-      <div className="card bg-base-100 shadow-sm text-left p-6 my-6">
+      <div className="card bg-base-400 shadow-2xl text-left p-6 my-6">
   <div className="card-body">
 
     
