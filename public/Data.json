@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Unlimited AI generations", "50+ writing templates", "Grammar checker"],
+    "icon": "../src/assets/products/design-tool.png"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "description": "2000+ premium templates for social media, presentations, and marketing materials.",
+    "price": 49,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["2000+ templates", "Monthly updates", "Commercial license"],
+    "icon": "../src/assets/products/operation.png"
+  },
+  {
+    "id": 3,
+    "name": "AI Content Generator",
+    "description": "Generate blogs, ads, and captions\nPowered by advanced AI",
+    "price": 19,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Unlimited content", "SEO optimization", "Multi-language support"],
+    "icon": "../src/assets/products/portfolio.png"
+  },
+  {
+    "id": 4,
+    "name": "Startup Toolkit",
+    "description": "Everything you need to launch fast\nTemplates and guides included",
+    "price": 49,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Business plan templates", "Pitch deck slides", "Marketing guides"],
+    "icon": "../src/assets/products/shopping-cart.png"
+  },
+  {
+    "id": 5,
+    "name": "Cloud Storage Pro",
+    "description": "Secure and fast cloud storage\nAccess files anywhere",
+    "price": 99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["1TB storage", "End-to-end encryption", "Auto backup"],
+    "icon": "../src/assets/products/social-media.png"
+  },
+  {
+    "id": 6,
+    "name": "Online Course Platform",
+    "description": "Create and sell online courses\nAll-in-one learning system",
+    "price": 29,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Course builder", "Student dashboard", "Payment integration"],
+    "icon": "../src/assets/products/writing_2327400 1.png"
+  }
+]
