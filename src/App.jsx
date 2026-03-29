@@ -5,6 +5,7 @@ import StarSection from './Components/StarSection/StarSection'
 import GetStartedSection from './Components/GetStartedSection/GetStartedSection'
 import PricingSection from './Components/PricingSection/PricingSection'
 import WorkFlowSection from './Components/WorkFlowSection/WorkFlowSection'
+import Footer from './Components/Footer/Footer'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <GetStartedSection />
       <PricingSection />
       <WorkFlowSection />
+      <Footer />
 
     </div>
 
