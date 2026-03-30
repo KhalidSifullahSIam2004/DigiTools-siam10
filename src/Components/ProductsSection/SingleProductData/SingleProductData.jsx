@@ -1,16 +1,17 @@
 import React from 'react'
 import { toast } from 'react-toastify';
 
-const SingleProductData = ({singleProductData, totalCart, setTotalCart}) => {
+const SingleProductData = ({singleProductData, totalCart, setTotalCart, total, setTotal}) => {
     const {id, name, description, price, tag, features, icon} = singleProductData;
     const isSelected = totalCart.some(cartItem => cartItem.id === id);
 
     const handleSelected = () => {
       setTotalCart([...totalCart, singleProductData]);
+      setTotal(total + price);
       toast('Item Added to Cart SuccessFully!');
     }
   return (
-    <div className="card w-96 bg-base-100 shadow-sm hover:-translate-y-2 transition-all duration-300 mt-4">
+    <div className="card w-96 bg-base-100 shadow-md hover:-translate-y-2 transition-all duration-300 mt-4">
   <div className="card-body">
 
 

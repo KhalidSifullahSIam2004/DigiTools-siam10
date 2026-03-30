@@ -5,7 +5,7 @@ import RocketImage from '../../assets/rocket.png'
 
 const GetStartedSection = () => {
   return (
-    <div className='text-center my-40 container mx-auto'>
+    <div id='get-started-section' className='text-center my-40 container mx-auto'>
       <h1 className='text-[#101727FF] text-5xl font-extrabold mb-4'>Get Started in 3 Steps</h1>
       <p className='text-[#627382FF] mb-10'>Start using premium digital tools in minutes, not hours.</p>
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 const PricingSection = () => {
   return (
-    <div className='text-center my-40 container mx-auto py-48'>
+    <div id='pricing-section' className='text-center my-40 container mx-auto py-48'>
       <h2 className='text-[#101727FF] text-center text-5xl font-extrabold  mb-4'>Simple, Transparent Pricing</h2>
       <p className='text-[#627382FF] text-center'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
 

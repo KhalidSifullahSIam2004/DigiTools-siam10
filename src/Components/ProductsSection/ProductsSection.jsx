@@ -3,13 +3,13 @@ import AllProducts from '../AllProducts/AllProducts';
 import CartSection from '../CartSection/CartSection';
 
 
-const ProductsSection = ({productsPromise, totalCart, setTotalCart}) => {
+const ProductsSection = ({productsPromise, totalCart, setTotalCart, activeButton, setActiveButton}) => {
     const productsData = use(productsPromise);
-    
-    const [activeButton, setActiveButton] = useState(111);
+
+    const [total, setTotal] = useState(0);
     
   return (
-    <div className='my-32 container mx-auto'>
+    <div id='products-section' className='my-32 container mx-auto'>
 
         <h1 className='text-5xl text-[#101727FF] font-extrabold text-center mb-4'>Premium Digital Tools</h1>
         <p className='text-[#627382FF] text-center mb-4'>Choose from our curated collection of premium digital products designed
@@ -23,7 +23,7 @@ const ProductsSection = ({productsPromise, totalCart, setTotalCart}) => {
     </div>
 
     {
-      activeButton === 111 ? <AllProducts productsData={productsData} totalCart={totalCart} setTotalCart={setTotalCart} /> : <CartSection />
+      activeButton === 111 ? <AllProducts productsData={productsData} totalCart={totalCart} setTotalCart={setTotalCart} total={total} setTotal={setTotal} /> : <CartSection totalCart={totalCart} setTotalCart={setTotalCart}  total={total} setTotal={setTotal} />
       
     }
 

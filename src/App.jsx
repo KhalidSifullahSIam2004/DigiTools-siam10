@@ -19,16 +19,41 @@ const App = () => {
 const productsPromise = fetchProducts();
 
 const [totalCart, setTotalCart] = useState([]);
+const [activeButton, setActiveButton] = useState(111);
+
+const handleOpenCartSection = () => {
+  setActiveButton(222);
+  document.getElementById('products-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
+
+const handleOpenProductsSection = () => {
+  setActiveButton(111);
+  document.getElementById('products-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
+
+const handleOpenPricingSection = () => {
+  document.getElementById('pricing-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
+
+const handleOpenGetStartedSection = () => {
+  document.getElementById('get-started-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
   return (
     <div>
-      <Navbar totalCart={totalCart} />
+      <Navbar
+        totalCart={totalCart}
+        handleOpenCartSection={handleOpenCartSection}
+        handleOpenProductsSection={handleOpenProductsSection}
+        handleOpenPricingSection={handleOpenPricingSection}
+        handleOpenGetStartedSection={handleOpenGetStartedSection}
+      />
       <HeroSection />
       <StarSection />
 
       {/* break */}
 
       <Suspense fallback={<span className="loading loading-dots loading-xl block mx-auto"></span>}>
-      <ProductsSection productsPromise={productsPromise} totalCart={totalCart} setTotalCart={setTotalCart}></ProductsSection>
+      <ProductsSection productsPromise={productsPromise} totalCart={totalCart} setTotalCart={setTotalCart} activeButton={activeButton} setActiveButton={setActiveButton}></ProductsSection>
       </Suspense>
 
       {/* break */}
