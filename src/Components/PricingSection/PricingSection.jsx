@@ -46,10 +46,12 @@ const PricingSection = () => {
 
 
 {/* 2nd */}
-        <div className="card bg-linear-to-r from-[#a139f6] to-[#7504fe] shadow-2xl hover:-translate-y-2 transition-all duration-300 mt-4 text-left p-6 my-6 text-white">
+        <div className="card relative bg-linear-to-r from-[#a139f6] to-[#7504fe] shadow-2xl hover:-translate-y-2 transition-all duration-300 mt-4 text-left p-6 my-6 text-white">
   <div className="card-body">
 
-    
+    <div className="badge badge-warning absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 border-0 px-4 py-3 font-semibold text-yellow-300">
+      Most Popular
+    </div>
     <span className="text-2xl font-bold">Pro</span>
     <span className="text-left">Best for professionals</span>
     
