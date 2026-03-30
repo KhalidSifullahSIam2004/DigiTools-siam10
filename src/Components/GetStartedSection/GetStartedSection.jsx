@@ -9,7 +9,7 @@ const GetStartedSection = () => {
       <h1 className='text-[#101727FF] text-5xl font-extrabold mb-4'>Get Started in 3 Steps</h1>
       <p className='text-[#627382FF] mb-10'>Start using premium digital tools in minutes, not hours.</p>
 
-      <div className=' grid justify-center gap-4 md:flex md:justify-between'>
+      <div className=' grid justify-center gap-4 md:flex md:justify-between lg:mx-32'>
 
 
         <div className="card bg-base-100 w-96 shadow-sm">
