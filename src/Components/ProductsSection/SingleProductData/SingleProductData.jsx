@@ -2,7 +2,7 @@ import React from 'react'
 import { toast } from 'react-toastify';
 
 const SingleProductData = ({singleProductData, totalCart, setTotalCart, total, setTotal}) => {
-    const {id, name, description, price, tag, features, icon} = singleProductData;
+    const {id, name, description, price, tagType, features, icon, period} = singleProductData;
     const isSelected = totalCart.some(cartItem => cartItem.id === id);
 
     const handleSelected = () => {
@@ -16,7 +16,7 @@ const SingleProductData = ({singleProductData, totalCart, setTotalCart, total, s
 
 
     <div className='flex justify-end'>
-    <span className={`badge badge-xs font-medium px-3 py-2 ${tag === 'best seller' && 'bg-[#fef3c6FF] text-[#bb4d00FF]'} ${tag === 'popular' && 'bg-[#e1e7ffFF] text-[#ad0ef2]'}  ${tag === 'new' && 'bg-[#dbfce7FF] text-[#3ca960]'} `}>{tag}</span>
+    <span className={`badge badge-xs font-medium px-3 py-2 ${tagType === 'best seller' && 'bg-[#fef3c6FF] text-[#bb4d00FF]'} ${tagType === 'popular' && 'bg-[#e1e7ffFF] text-[#ad0ef2]'}  ${tagType === 'new' && 'bg-[#dbfce7FF] text-[#3ca960]'} `}>{tagType}</span>
     </div>
 
     <img src={icon}  className='w-6 h-6'/>
@@ -25,7 +25,7 @@ const SingleProductData = ({singleProductData, totalCart, setTotalCart, total, s
 
       <p className='text-[#627382FF]'>{description}</p>
 
-      <h3 className='text-[#101727FF] text-2xl font-bold'>${price}<span className='text-[#627382FF] text-[16px] font-normal'>/month</span></h3>
+      <h3 className='text-[#101727FF] text-2xl font-bold'>${price}<span className='text-[#627382FF] text-[16px] font-normal'>/{period}</span></h3>
     
     <ul className="mt-6 flex flex-col gap-2 text-xs">
         {
