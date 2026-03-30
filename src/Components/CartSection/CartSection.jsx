@@ -6,13 +6,14 @@ const CartSection = ({totalCart, setTotalCart, total, setTotal}) => {
 
   const handleRemoveSecectedItem = (productData) => {
     setTotalCart(totalCart.filter(singleCart => singleCart.id !== productData.id));
-    setTotal(total - productData.price)
+    setTotal(total - productData.price);
     toast('Successfully removed the cart');
   }
 
   const handleProceedButton = () => {
     setTotalCart([]);
     toast('Your order is successful!');
+    setTotal(0);
 
   }
   return (
