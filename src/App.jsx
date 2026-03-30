@@ -6,7 +6,7 @@ import GetStartedSection from './Components/GetStartedSection/GetStartedSection'
 import PricingSection from './Components/PricingSection/PricingSection'
 import WorkFlowSection from './Components/WorkFlowSection/WorkFlowSection'
 import Footer from './Components/Footer/Footer'
-import ProductsSection from './Components/Functionality/ProductsSection/ProductsSection'
+import ProductsSection from './Components/ProductsSection/ProductsSection'
 
 
 const fetchProducts = async () => {

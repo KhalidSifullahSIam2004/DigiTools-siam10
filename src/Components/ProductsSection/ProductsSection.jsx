@@ -1,4 +1,7 @@
 import React, { use, useState } from 'react'
+import AllProducts from '../AllProducts/AllProducts';
+import CartSection from '../CartSection/CartSection';
+
 
 const ProductsSection = ({productsPromise}) => {
     const productsData = use(productsPromise);
@@ -19,6 +22,10 @@ const ProductsSection = ({productsPromise}) => {
       <button className={`bg-white rounded-full px-6 py-3 flex items-center justify-center cursor-pointer ${activeButton === 222 && 'border border-[#7b47e3] bg-linear-to-r from-[#a139f6] to-[#7504fe] text-white'}`} onClick={() => setActiveButton(222)}>Cart(2)</button>  
     </div>
 
+    {
+      activeButton === 111 ? <AllProducts productsData={productsData} /> : <CartSection />
+      
+    }
 
     </div>
   )

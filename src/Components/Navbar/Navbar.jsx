@@ -33,7 +33,7 @@ const Navbar = () => {
   <div className="navbar-end space-x-4">
     <CiShoppingCart className='text-3xl cursor-pointer' />
     <button className='cursor-pointer'>Login</button>
-    <button style={{ fontFamily: 'Inter, sans-serif' }}  className='bg-linear-to-r from-[#4F39F6] to-[#7b47e3] font-semibold text-white rounded-full px-4 py-3 cursor-pointer'>Get Started</button>
+    <button style={{ fontFamily: 'Inter, sans-serif' }}  className='bg-linear-to-r from-[#4F39F6] to-[#7b47e3] font-semibold text-white rounded-full px-4 py-3 cursor-pointer hover:-translate-y-2 transition-all duration-500 mt-4 hover:scale-95'>Get Started</button>
   </div>
 </div>
   )

@@ -16,11 +16,11 @@ const WorkFlowSection = () => {
             <div className='flex flex-col md:flex-row gap-4 justify-center'>
     
     
-              <button className="bg-white font-semibold text-[#7b47e3] rounded-full px-6 py-3 flex items-center justify-center gap-2 border border-[#7b47e3] hover:bg-linear-to-r from-[#a139f6] to-[#7504fe] hover:text-white cursor-pointer">
+              <button className="bg-white font-semibold text-[#7b47e3] rounded-full px-6 py-3 flex items-center justify-center gap-2 border border-[#7b47e3] hover:bg-linear-to-r from-[#a139f6] to-[#7504fe] hover:text-white cursor-pointer hover:-translate-y-2 transition-all duration-500 mt-4 hover:scale-95">
                 Explore Products
               </button>
     
-              <button className='bg-transparent border font-semibold text-white rounded-full px-6 py-3 cursor-pointer hover:text-green-300'>
+              <button className='bg-transparent border font-semibold text-white rounded-full px-6 py-3 cursor-pointer hover:text-green-300 hover:-translate-y-2 transition-all duration-500 mt-4 hover:scale-95'>
                 View Pricing
               </button>
             </div>

@@ -12,14 +12,14 @@ const GetStartedSection = () => {
       <div className=' grid justify-center gap-4 md:flex md:justify-between lg:mx-32'>
 
 
-        <div className="card bg-base-100 w-96 shadow-sm">
+        <div className="card bg-base-100 w-96 shadow-sm hover:-translate-y-2 transition-all duration-300 mt-4">
           <div className='flex justify-end'>
             <p className='bg-linear-to-b from-[#a139f6] to-[#7504fe] rounded-full w-6 text-white mt-6 mr-4'>01</p>
           </div>
 
 
   
-  <div className="card-body items-center text-center space-y-4">
+  <div className="card-body items-center text-center space-y-4 ">
     <img src={UserImage} className='bg-[#cac8cd] rounded-full p-4' />
     <h2 className="text-[#101727FF] text-2xl font-bold">Create Account</h2>
     <p className="text-[#627382FF]">Sign up for free in seconds. No credit card required to get started.</p>
@@ -31,7 +31,7 @@ const GetStartedSection = () => {
 
 
     
-        <div className="card bg-base-100 w-96 shadow-sm">
+        <div className="card bg-base-100 w-96 shadow-sm hover:-translate-y-2 transition-all duration-300 mt-4">
           <div className='flex justify-end'>
             <p className='bg-linear-to-b from-[#a139f6] to-[#7504fe] rounded-full w-6 text-white mt-6 mr-4'>02</p>
           </div>
@@ -50,7 +50,7 @@ const GetStartedSection = () => {
 
 
      
-        <div className="card bg-base-100 w-96 shadow-sm">
+        <div className="card bg-base-100 w-96 shadow-sm hover:-translate-y-2 transition-all duration-300 mt-4">
           <div className='flex justify-end'>
             <p className='bg-linear-to-b from-[#a139f6] to-[#7504fe] rounded-full w-6 text-white mt-6 mr-4'>03</p>
           </div>

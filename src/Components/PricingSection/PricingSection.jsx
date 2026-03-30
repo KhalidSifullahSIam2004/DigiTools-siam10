@@ -6,10 +6,10 @@ const PricingSection = () => {
       <h2 className='text-[#101727FF] text-center text-5xl font-extrabold  mb-4'>Simple, Transparent Pricing</h2>
       <p className='text-[#627382FF] text-center'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
 
-      <div className=' grid justify-center gap-4 md:grid-cols-2 xl:flex lg:justify-between lg:mx-48'>
+      <div className='grid justify-center gap-4 md:grid-cols-2 xl:flex lg:justify-between lg:mx-48'>
 
 {/* 1st */}
-        <div className="card bg-base-400 shadow-2xl text-left p-6 my-6">
+        <div className="card bg-base-400 shadow-2xl text-left p-6 my-6 hover:-translate-y-2 transition-all duration-300 mt-4">
   <div className="card-body">
 
     
@@ -46,7 +46,7 @@ const PricingSection = () => {
 
 
 {/* 2nd */}
-        <div className="card bg-linear-to-r from-[#a139f6] to-[#7504fe] shadow-2xl text-left p-6 my-6 text-white">
+        <div className="card bg-linear-to-r from-[#a139f6] to-[#7504fe] shadow-2xl hover:-translate-y-2 transition-all duration-300 mt-4 text-left p-6 my-6 text-white">
   <div className="card-body">
 
     
@@ -91,7 +91,7 @@ const PricingSection = () => {
 
 
 {/* 3rd */}
-      <div className="card bg-base-400 shadow-2xl text-left p-6 my-6">
+      <div className="card bg-base-400 shadow-2xl text-left p-6 my-6 hover:-translate-y-2 transition-all duration-300 mt-4">
   <div className="card-body">
 
     
