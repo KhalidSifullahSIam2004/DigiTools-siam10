@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import HeroSection from './Components/HeroSection/HeroSection'
 import StarSection from './Components/StarSection/StarSection'
@@ -6,13 +6,28 @@ import GetStartedSection from './Components/GetStartedSection/GetStartedSection'
 import PricingSection from './Components/PricingSection/PricingSection'
 import WorkFlowSection from './Components/WorkFlowSection/WorkFlowSection'
 import Footer from './Components/Footer/Footer'
+import ProductsSection from './Components/Functionality/ProductsSection/ProductsSection'
+
+
+const fetchProducts = async () => {
+  const res = await fetch('./Data.json');
+  return res.json();
+}
+
 
 const App = () => {
+const productsPromise = fetchProducts();
   return (
     <div>
       <Navbar />
       <HeroSection />
       <StarSection />
+
+      {/* break */}
+
+      <Suspense fallback={<span className="loading loading-dots loading-xl block mx-auto"></span>}>
+      <ProductsSection productsPromise={productsPromise}></ProductsSection>
+      </Suspense>
 
       {/* break */}
 
