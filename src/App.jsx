@@ -25,11 +25,7 @@ const App = () => {
       <HeroSection />
       <StarSection />
 
-      <Suspense
-        fallback={
-          <span className="loading loading-dots loading-xl block mx-auto"></span>
-        }
-      >
+      <Suspense fallback={<span className="loading loading-dots loading-xl block mx-auto"></span>}>
         <ProductsSection
           productsPromise={productsPromise}
           totalCart={totalCart}

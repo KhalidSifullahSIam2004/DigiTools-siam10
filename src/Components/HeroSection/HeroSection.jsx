@@ -1,6 +1,7 @@
 import React from 'react'
-import BannerImage from '../../assets/banner.png'
-import PlayImage from '../../assets/Play.png'
+
+const BannerImage = '/assets/banner.png';
+const PlayImage = '/assets/Play.png';
 
 const HeroSection = () => {
   return (

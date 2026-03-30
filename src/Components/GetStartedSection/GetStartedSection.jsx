@@ -1,7 +1,8 @@
 import React from 'react'
-import UserImage from '../../assets/user.png'
-import PackageImage from '../../assets/package.png'
-import RocketImage from '../../assets/rocket.png'
+
+const UserImage = '/assets/user.png';
+const PackageImage = '/assets/package.png';
+const RocketImage = '/assets/rocket.png';
 
 const GetStartedSection = () => {
   return (
