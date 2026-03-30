@@ -18,8 +18,11 @@ const HeroSection = () => {
       <div className='order-2 lg:order-1'>
 
         <div className='flex justify-center lg:justify-start'>
-          <button className='font-medium bg-[#cbc9e4] text-[#1900ff] py-3 px-4 rounded-full mb-8'>
-            New: AI-Powered Tools Available
+        
+        
+          <button className='font-medium bg-[#cbc9e4] text-[#1900ff] py-3 px-4 rounded-full mb-8 flex items-center gap-2'>
+            <span className='w-2.5 h-2.5 rounded-full bg-[#1900ff] inline-block'></span>
+            <span>New: AI-Powered Tools Available</span>
           </button>
         </div>
 
