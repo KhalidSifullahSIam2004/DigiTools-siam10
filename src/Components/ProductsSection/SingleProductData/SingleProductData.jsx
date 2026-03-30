@@ -1,9 +1,16 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-const SingleProductData = ({singleProductData}) => {
-    const {name, description, price, tag, features, icon} = singleProductData;
+const SingleProductData = ({singleProductData, totalCart, setTotalCart}) => {
+    const {id, name, description, price, tag, features, icon} = singleProductData;
+    const isSelected = totalCart.some(cartItem => cartItem.id === id);
 
-    const [isSelected, setIsSelected] = useState(false)
+    const handleSelected = () => {
+      if (isSelected) {
+        return;
+      }
+
+      setTotalCart([...totalCart, singleProductData]);
+    }
   return (
     <div className="card w-96 bg-base-100 shadow-sm hover:-translate-y-2 transition-all duration-300 mt-4">
   <div className="card-body">
@@ -36,13 +43,9 @@ const SingleProductData = ({singleProductData}) => {
 
     <div className="mt-6">
 
-   <button className={`font-bold w-64 text-white rounded-full px-6 py-3 ${isSelected 
+   <button className={`font-bold w-80 text-white rounded-full px-6 py-3 ${isSelected 
       ? 'bg-green-500 cursor-not-allowed' 
-      : 'bg-linear-to-r from-[#a139f6] to-[#7504fe] cursor-pointer '
-    }
-  `}
-  disabled={isSelected} 
-  onClick={() => setIsSelected(true)}
+      : 'bg-linear-to-r from-[#a139f6] to-[#7504fe] cursor-pointer'}`} disabled={isSelected} onClick={handleSelected}
 >
   {isSelected ? 'Added to Cart' : 'Buy Now'}
 </button> 

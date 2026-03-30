@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import React, { Suspense, useState } from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import HeroSection from './Components/HeroSection/HeroSection'
 import StarSection from './Components/StarSection/StarSection'
@@ -17,16 +17,18 @@ const fetchProducts = async () => {
 
 const App = () => {
 const productsPromise = fetchProducts();
+
+const [totalCart, setTotalCart] = useState([]);
   return (
     <div>
-      <Navbar />
+      <Navbar totalCart={totalCart} />
       <HeroSection />
       <StarSection />
 
       {/* break */}
 
       <Suspense fallback={<span className="loading loading-dots loading-xl block mx-auto"></span>}>
-      <ProductsSection productsPromise={productsPromise}></ProductsSection>
+      <ProductsSection productsPromise={productsPromise} totalCart={totalCart} setTotalCart={setTotalCart}></ProductsSection>
       </Suspense>
 
       {/* break */}
