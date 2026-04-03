@@ -13,8 +13,11 @@ const fetchProducts = async () => {
   return res.json();
 };
 
+
+const productsPromise = fetchProducts();
+
+
 const App = () => {
-  const productsPromise = fetchProducts();
 
   const [totalCart, setTotalCart] = useState([]);
   const [activeButton, setActiveButton] = useState(111);
