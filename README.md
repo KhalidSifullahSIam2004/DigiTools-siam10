@@ -118,7 +118,7 @@ src/
 ## 👨‍💻 Author
 
 **Khalid Sifullah Siam**  
-GitHub: [@KhalidSifullahSIam2004](https://github.com/KhalidSifullahSIam2004)  
+GitHub: [@Khalid-Sifullah-Siam](https://github.com/KhalidSifullahSIam2004)  
 
 
 ## Final Note
