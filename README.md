@@ -40,7 +40,7 @@ This project reflects my effort to write **clean code**, organize the UI into re
 
 ## 🚀 Live Demo
 
-Live Site: https://digitools-project.netlify.app/
+Live Site: https://digitools-project-siam10.netlify.app
 
 Repository: https://github.com/Khalid-Sifullah-Siam/DigiTools-siam10
 
